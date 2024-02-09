@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+body{
+    background: #000237;
+    font-family: 'Irish Grover', system-ui;
+}
+
+.box{
+    width: 209px;
+    height: 209px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center;
+
+    color: #000;
+    font-family: "Irish Grover";
+    font-size: 30px;
+}
+
+#tablero {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 100px 50px 80px 50px
+}
+
+#currentNum{
+    font-size: 50px;
+}
+
+#mainButton{
+    width: 263px;
+    height: 80px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #83FFCB;
+
+    color: #000;
+    font-family: "Hepta Slab";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#gameSpace {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center;
+    margin: 20px 100px 0 50px;
+
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    text-align: center;
+}
+
+.movementB{
+    width: 76px;
+    height: 99px;
+    flex-shrink: 0;
+    fill: #9A9FFF;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#currentPlayer{
+    width: 145px;
+    height: 33px;
+    flex-shrink: 0;
+
+    color: #9A9FFF;
+    font-family: "Irish Grover";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#cardSpace{
+    width: 327px;
+    height: 327px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #FFF;
+}
+
