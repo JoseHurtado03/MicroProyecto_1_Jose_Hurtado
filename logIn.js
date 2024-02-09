@@ -1,4 +1,4 @@
-const button = document.getElementById("searchButton")
+const button = document.getElementById("startButton")
 const userName1 = document.getElementById("player1")
 const userName2 = document.getElementById("player2")
 const userName3 = document.getElementById("player3")
@@ -15,7 +15,7 @@ function evaluateInput() {
 
 function evaluateNum(str) {
         let num = parseFloat(str);
-        return num > 2 && num <= 6 && !isNaN(num);
+        return num > 2 && num <= 5 && !isNaN(num);
 }
 
 button.addEventListener("click", function() {
@@ -25,3 +25,5 @@ button.addEventListener("click", function() {
             alert("Por favor, completa todos los campos de forma correcta para continuar.")
     }
 });
+
+/*export {numMatrix}*/

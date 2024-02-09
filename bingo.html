@@ -6,28 +6,29 @@
     <link rel="stylesheet" href="bingoStyles.css">
     <title>Bingo Game</title>
 </head>
-<body>
-    <section id="tablero">
-        <section class="box" id="turnBox">
-            <h2>Turno</h2>
-            <h1>0</h1>
+    <body>
+        <section id="tablero">
+            <section class="box" id="turnBox">
+                <h2>Turno</h2>
+                <h1 id="numTurn">0</h1>
+            </section>
+            <section class="box" id="currentNum">
+                <h2 id="bingoNum">0</h2>    
+            </section>
+            <button id="mainButton">¡Girar!</button>
         </section>
-        <section class="box" id="currentNum">
-            <h2>X</h2>    
+        <section id="gameSpace">
+            <h2 id="currentPlayer">Jugador 1</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="76" height="99" viewBox="0 0 76 99" fill="none" id="leftButton" class="movementB">
+                <path d="M0 49.75L75.0792 0.603058V98.8969L0 49.75Z" fill="#9A9FFF"/>
+            </svg>
+            <section id="cardSpace">
+
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" width="76" height="99" viewBox="0 0 76 99" fill="none" id="rightButton" class="movementB">
+                <path d="M75.1056 49.75L0.0263977 98.8969V0.603058L75.1056 49.75Z" fill="#9A9FFF"/>
+              </svg>
         </section>
-        <button id="mainButton">Girar!</button>
-    </section>
-    <section id="gameSpace">
-        <h2 id="currentPlayer">Jugador X</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="99" viewBox="0 0 76 99" fill="none" id="leftButton" class="movementB">
-            <path d="M0 49.75L75.0792 0.603058V98.8969L0 49.75Z" fill="#9A9FFF"/>
-        </svg>
-        <section id="cardSpace">
-            
-        </section>
-        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="99" viewBox="0 0 76 99" fill="none" id="rightButton" class="movementB">
-            <path d="M75.1056 49.75L0.0263977 98.8969V0.603058L75.1056 49.75Z" fill="#9A9FFF"/>
-          </svg>
-    </section>
-</body>
+        <script src="main.js" type="module"></script>
+    </body>
 </html>

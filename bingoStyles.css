@@ -23,7 +23,7 @@ body{
 
 #tablero {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    justify-content: space-around; /* Distribuye los elementos a lo largo del contenedor */
     align-items: center; /* Centra verticalmente los elementos */
     margin: 100px 50px 80px 50px
 }
@@ -88,5 +88,20 @@ body{
 
     border-radius: 20px;
     background: #FFF;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
 }
 
+/* Estilos para la tabla de bingo */
+.bingo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bingo-table td {
+    width: 30px; /* Ajusta el ancho de las celdas según sea necesario */
+    height: 30px; /* Ajusta la altura de las celdas según sea necesario */
+    border: 1px solid #000; /* Borde de las celdas */
+    text-align: center; /* Alineación del contenido en el centro */
+}
