@@ -105,3 +105,8 @@ body{
     border: 1px solid #000; /* Borde de las celdas */
     text-align: center; /* Alineación del contenido en el centro */
 }
+
+.mark {
+    background-color: red;
+    color: white; /* Opcional: Cambia el color del texto a blanco para que sea más visible */
+}
