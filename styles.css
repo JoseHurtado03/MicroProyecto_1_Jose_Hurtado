@@ -96,3 +96,28 @@ section {
 
     margin: 200px 150px 0 0;
 }
+
+#records{
+    width: 300px;
+    height: 320px;
+    flex-shrink: 0;
+
+    border-radius: 40px;
+    background: #FFF;
+
+    color: #000;
+    font-family: "Irish Grover";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+}
+
+#recordsTitle{
+    color: #444BFF;
+    font-family: "Irish Grover";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+}

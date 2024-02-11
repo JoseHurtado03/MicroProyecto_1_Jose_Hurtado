@@ -110,3 +110,47 @@ body{
     background-color: red;
     color: white; /* Opcional: Cambia el color del texto a blanco para que sea más visible */
 }
+
+#results{
+    width: 411px;
+    height: 403px;
+    flex-shrink: 0;
+
+    border-radius: 40px;
+    background: #FFF;
+
+    color: #000;
+    font-family: "Irish Grover";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+#resultsTitle{
+    text-align: center;
+    color: #444BFF;
+    font-family: "Irish Grover";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 150;
+    line-height: normal;
+}
+
+#reset{
+    width: 263px;
+    height: 80px;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+    background: #83FFCB;
+
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 30px;
+}

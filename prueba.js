@@ -12,6 +12,8 @@ const cardSpace = document.getElementById("cardSpace");
 const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
 const currentPlayer = document.getElementById("currentPlayer");
+const resultTable = document.getElementById("results")
+const resetB = document.getElementById("reset")
 
 var currentPage = '';
 
@@ -31,10 +33,14 @@ function indexHtmlFunction() {
     
     button.addEventListener("click", function() {
         if (evaluateInput() && evaluateNum(numMatrix.value)) {
+            localStorage.setItem("player1", userName1.value)
+            localStorage.setItem("player2", userName2.value)            
+            localStorage.setItem("player3", userName3.value)
+            localStorage.setItem("player4", userName4.value)
             localStorage.setItem("numerito", parseInt(numMatrix.value))
             window.location.href = 'bingo.html'
         } else {
-                alert("Por favor, completa todos los campos de forma correcta para continuar.")
+            alert("Por favor, completa todos los campos de forma correcta para continuar.")
         }
     });
 }
@@ -50,10 +56,22 @@ function bingoHtmlFunction() {
             bingoNum.innerText = currentNumB;
             showBingoMatrix(currentCard)
         } else {
+            var results = showPoints();
+            resultTable.style.display = "block";
+            resetB.style.display = "block"
+            resultTable.innerHTML = '<h3 id="resultsTitle">Puntuaciones</h3>';
+            var resultsArray = results.split('\n');
+            resultsArray.forEach(function(result) {
+                resultTable.innerHTML += '<p>' + result + '</p>';
+            });
             alert("Ya has alcanzado el límite de 25 turnos.");
         }
         evaluatePoints();
     });
+
+    resetB.addEventListener("click", function(){
+        window.location.href = 'index.html'
+    })
     
     let usedNumsByBingo = []; // Array para almacenar los números que ya han sido utilizados por la ruleta de Bingo
     let usedNumsByMe = [];    // Array para almacenar los números que ya han sido utilizados en un mismo cartón de Bingo
@@ -154,6 +172,7 @@ function bingoHtmlFunction() {
             points[i]= point;
         }
         console.log(points);
+        return points;
     }
     
     function countColoredRows(matrix) {
@@ -230,6 +249,21 @@ function bingoHtmlFunction() {
         } else {
             return 0;
         }
+    }
+
+    function showPoints(){
+        var points = evaluatePoints();
+        var player1 = localStorage.getItem("player1");
+        var pP1 = player1 + " " + points[0]
+        var player2 = localStorage.getItem("player2");
+        var pP2 = player2 + " " + points[1]
+        var player3 = localStorage.getItem("player3");
+        var pP3 = player3 + " " + points[2]
+        var player4 = localStorage.getItem("player4");
+        var pP4 = player4 + " " + points[3]
+        var results = ("Las puntuaciones son:\n "+ pP1 + "\n "+pP2 + "\n "+pP3+ "\n "+pP4)
+        console.log(results)
+        return results;
     }
     
     function main(){
