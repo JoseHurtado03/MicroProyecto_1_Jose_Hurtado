@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 30px;
 }
 
 body{
@@ -123,6 +123,10 @@ section {
 /* RESPONSIVE */
 /* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
 @media (min-width: 360px) and (max-width: 1439px){
+    *{
+        margin: 0 0 0 0;
+    }
+    
     #mainTitle{
         top: 0;
         left: 50%;
@@ -197,6 +201,10 @@ section {
 
 /* Tablet ¡Pad Pro 11" */ 
 @media (min-width: 830px) and (max-width: 1439px){
+    *{
+        margin: 0 0 0 0;
+    }
+    
     #mainTitle{
         width: 347px;
         height: 127px;
