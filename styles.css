@@ -53,7 +53,6 @@ body{
     margin-bottom: 30px;
 
     color: #000;
-    font-family: "Hepta Slab";
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -82,7 +81,6 @@ body{
     background: #83FFCB;
 
     color: #000;
-    font-family: "Hepta Slab";
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -90,16 +88,15 @@ body{
 }
 
 section {
-    display: flex; /* Establece un contenedor de tipo flexbox */
-    flex-direction: column; /* Alinea los elementos de forma vertical */
-    align-items: center; /* Centra los elementos horizontalmente */
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 200px 150px 0 0;
 }
 
 #records{
     width: 300px;
-    height: 320px;
+    height: 580px;
     flex-shrink: 0;
 
     border-radius: 40px;
@@ -107,7 +104,7 @@ section {
 
     color: #000;
     font-family: "Irish Grover";
-    font-size: 15px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 250;
     line-height: normal;
@@ -120,4 +117,142 @@ section {
     font-style: normal;
     font-weight: 250;
     line-height: normal;
+}
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
+@media (min-width: 360px) and (max-width: 1439px){
+    #mainTitle{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        width: 213.118px;
+        height: 78px;
+        font-size: 64.404px;
+    }
+
+    .player{
+        width: 79px;
+        height: 18px;
+        font-size: 16.386px;
+    }
+
+    .textField{
+        width: 279px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+
+    #numCard{
+        width: 166.59px;
+        height: 18.024px;
+        flex-shrink: 0;
+        font-size: 16.386px;
+    }
+
+    #numMatrix{
+        width: 143.649px;
+        height: 43.696px;
+        flex-shrink: 0;
+    }
+
+    .startButton{
+        width: 111.901px;
+        height: 99.137px;
+        flex-shrink: 0;
+
+        font-size: 21.274px;
+        font-weight: 400;
+    }
+
+    #records{
+        width: 133.6px;
+        height: 131px;
+        flex-shrink: 0;
+
+        font-size: 13.002px;
+        font-weight: 400;
+    }
+
+    #recordsTitle{
+        font-size: 19.504px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        margin: 10px 0 0 0
+    }
+
+    #seccion{
+        margin-top: 150px;
+    }
+}
+
+/* Tablet ¡Pad Pro 11" */ 
+@media (min-width: 830px) and (max-width: 1439px){
+    #mainTitle{
+        width: 347px;
+        height: 127px;
+        
+        font-size: 105px;
+    }
+
+    .player{
+        width: 145px;
+        height: 33px;
+        font-size: 30px;
+    }
+
+    .textField{
+        width: 511px;
+        height: 80.447px;
+        font-size: 25px;
+    }
+
+    #numCard{
+        width: 305px;
+        height: 33px;
+        font-size: 30px;
+    }
+
+    #numMatrix{
+        width: 263px;
+        height: 80px;
+    }
+
+    .startButton{
+        width: 263px;
+        height: 233px;
+        font-size: 50px;
+    }
+
+    #records{
+        width: 314px;
+        height: 307.888px;
+        font-size: 30.56px;
+    }
+
+    #recordsTitle{
+        font-size: 45.839px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        margin: 10px 0 0 0
+    }
+
+    #seccion{
+        margin-top: 200px;
+    }
 }

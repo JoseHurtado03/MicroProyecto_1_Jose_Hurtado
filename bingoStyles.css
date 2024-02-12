@@ -12,8 +12,8 @@ body{
     border-radius: 20px;
     background: #FFF;
 
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
     color: #000;
@@ -23,8 +23,8 @@ body{
 
 #tablero {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos a lo largo del contenedor */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-around;
+    align-items: center;
     margin: 100px 50px 80px 50px
 }
 
@@ -41,7 +41,6 @@ body{
     background: #83FFCB;
 
     color: #000;
-    font-family: "Hepta Slab";
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -50,12 +49,12 @@ body{
 
 #gameSpace {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
+    align-items: center;
     text-align: center;
     margin: 20px 100px 0 50px;
 
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; 
+    justify-content: center;
     text-align: center;
 }
 
@@ -89,8 +88,8 @@ body{
     border-radius: 20px;
     background: #FFF;
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para la tabla de bingo */
@@ -100,15 +99,15 @@ body{
 }
 
 .bingo-table td {
-    width: 30px; /* Ajusta el ancho de las celdas según sea necesario */
-    height: 30px; /* Ajusta la altura de las celdas según sea necesario */
-    border: 1px solid #000; /* Borde de las celdas */
-    text-align: center; /* Alineación del contenido en el centro */
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
 }
 
 .mark {
     background-color: red;
-    color: white; /* Opcional: Cambia el color del texto a blanco para que sea más visible */
+    color: white;
 }
 
 #results{
@@ -121,7 +120,7 @@ body{
 
     color: #000;
     font-family: "Irish Grover";
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 250;
     line-height: normal;
@@ -151,6 +150,148 @@ body{
     color: #000;
     font-size: 30px;
     font-weight: 400;
-    margin: 0 auto; /* Centra horizontalmente */
+    margin: 0 auto;
     margin-top: 30px;
+}
+
+#winner{
+    color: #000677;
+    font-family: "Irish Grover";
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 300px x 800px*/
+@media (min-width: 300px) and (max-width: 1439px){
+    .box{
+        width: 79.062px;
+        height: 79.062px;
+        font-size: 8px;
+        margin-right: 10px;
+    }
+
+    #numTurn{
+        font-size: 18px;
+    }
+
+    #currentNum{
+        font-size: 20px;
+    }
+
+    #mainButton{
+        width: 99.489px;
+        height: 30.263px;
+        font-size: 18.914px;
+    }
+
+    .movementB{
+        width: 40px;
+        height: 35px;
+    }
+
+    #gameSpace{
+        position: relative;
+    }
+
+    #currentPlayer{
+        width: 80px;
+        height: 17px;
+        font-size: 15px;
+        margin-bottom: 300px;
+
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    #cardSpace{
+        width: 190px;
+        height: 190px;
+        margin-top: 50px;
+    }
+
+    #results{
+        width: 177px;
+        height: 250px;
+        font-size: 12px;
+    }
+
+    #resultsTitle{
+        font-size: 20px;
+    }
+
+    #reset{
+        width: 113.33px;
+        height: 34.473px;
+        font-size: 12.927px;
+    }
+
+    #winner{
+        font-size: 20px;
+        color: #170064;
+        margin-top: 10px;
+    }
+}
+
+/* Tablet ¡Pad Pro 11" 830px x 1190px*/ 
+@media (min-width: 830px) and (max-width: 1439px){
+    .box{
+        width: 152px;
+        height: 152px;
+        font-size: 22px;
+    }
+
+    #numTurn{
+        font-size: 30px;
+    }
+
+    #currentNum{
+        font-size: 40px;
+    }
+
+    #mainButton{
+        width: 191.273px;
+        height: 58.182px;
+        font-size: 36.364px;
+    }
+
+    .movementB{
+        width: 113.5px;
+        height: 100.106px;
+    }
+
+    #currentPlayer{
+        width: 145px;
+        height: 33px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #cardSpace{
+        width: 327px;
+        height: 327px;
+        margin-top: 10px;
+    }
+
+    #results{
+        width: 291.329px;
+        height: 285.658px;
+        font-size: 18px;
+    }
+
+    #resultsTitle{
+        font-size: 35px;
+    }
+
+    #reset{
+        width: 186.422px;
+        height: 56.706px;
+        font-size: 21.265px;
+    }
+    #winner{
+        font-size: 30px;
+        color: #00f7ff;
+        margin-top: 15px;
+    }
 }
